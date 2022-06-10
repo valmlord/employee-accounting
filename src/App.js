@@ -1,14 +1,9 @@
-import {Component} from 'react';
+import { Component } from 'react';
 import './App.css';
 
 const Header = () => {
   return <h2>Hello World</h2>
 }
-
-// const Field = () => {
-
-//   return 
-// }
 
 class Field extends Component {
   render() {
@@ -17,10 +12,10 @@ class Field extends Component {
       width: '300px'
     };
 
-    return <input 
-            placeholder={holder} 
-            type="text"
-            style={styledField}/>
+    return <input
+      placeholder={holder}
+      type="text"
+      style={styledField} />
   }
 }
 
@@ -29,15 +24,15 @@ function Btn() {
 
   const logged = false;
 
-  return <button>{ logged ? 'Enter' : text }</button>
+  return <button>{logged ? 'Enter' : text}</button>
 }
 
 function App() {
   return (
     <div className="App">
-      <Header/>
-      <Field/>
-      <Btn/>
+      <Header />
+      <Field />
+      <Btn />
     </div>
   );
 }
